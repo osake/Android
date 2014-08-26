@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.eftimoff.knowledge.R;
+import com.eftimoff.knowledge.fragments.MainFragment;
 
 
 public class MainActivity extends Activity {
@@ -16,7 +17,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		if (savedInstanceState == null) {
 			getFragmentManager().beginTransaction()
-					.add(R.id.container, new Frag())
+					.add(R.id.container, new MainFragment())
 					.commit();
 		}
 	}
