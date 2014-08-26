@@ -2,12 +2,18 @@ package com.eftimoff.knowledge;
 
 import android.app.Application;
 
+import com.eftimoff.question.Question;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
+import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
 import com.google.api.client.http.HttpTransport;
 import com.google.api.client.json.JsonFactory;
 
+import javax.annotation.Nullable;
+
 public class KnowledgeApplication extends Application {
+
+	private static volatile Question question;
 
 	/**
 	 * Class instance of the JSON factory.
@@ -20,15 +26,22 @@ public class KnowledgeApplication extends Application {
 	public static final HttpTransport HTTP_TRANSPORT = AndroidHttp.newCompatibleTransport();
 
 
-//	public static Registration getApiServiceHandle(@Nullable GoogleAccountCredential credential) {
-//		// Use a builder to help formulate the API request.
-//		Registration.Builder messaging = new Registration.Builder(HTTP_TRANSPORT,
-//				JSON_FACTORY, credential);
-//
-//		// If running the Cloud Endpoint API locally then point the API stub there by un-commenting the
-//		// next line.
-//		// helloWorld.setRootUrl("http://192.168.1.100:8080/_ah/api/");
-//
-//		return messaging.build();
-//	}
+	public static Question getQuestionApi(@Nullable GoogleAccountCredential credential) {
+		if (question == null) {
+			synchronized (KnowledgeApplication.class) {
+				if (question == null) {
+					// Use a builder to help formulate the API request.
+					Question.Builder messaging = new Question.Builder(HTTP_TRANSPORT,
+							JSON_FACTORY, credential);
+
+					// If running the Cloud Endpoint API locally then point the API stub there by un-commenting the
+					// next line.
+					// helloWorld.setRootUrl("http://192.168.1.100:8080/_ah/api/");
+
+					question = messaging.build();
+				}
+			}
+		}
+		return question;
+	}
 }

@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-public class Question implements Serializable {
+public class QuestionRecord implements Serializable {
 
 	@Id
 	private String id;
