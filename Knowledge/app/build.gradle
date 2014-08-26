@@ -21,6 +21,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.tundem.actionitembadge:library:1.2.0@aar'
+    compile 'com.joanzapata.android:android-iconify:1.0.6'
     compile 'com.android.support:support-v4:20.0.0'
     // BEGIN Google APIs
     // Play Services will validate the application prior to allowing OAuth2 access.
