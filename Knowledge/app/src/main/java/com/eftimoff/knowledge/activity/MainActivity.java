@@ -1,23 +1,23 @@
 package com.eftimoff.knowledge.activity;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.eftimoff.knowledge.R;
-import com.eftimoff.knowledge.fragments.MainFragment;
+import com.eftimoff.knowledge.fragments.QuestionsFragment;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends FragmentActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		if (savedInstanceState == null) {
-			getFragmentManager().beginTransaction()
-					.add(R.id.container, new MainFragment())
+			getSupportFragmentManager().beginTransaction()
+					.add(R.id.container, new QuestionsFragment())
 					.commit();
 		}
 	}
