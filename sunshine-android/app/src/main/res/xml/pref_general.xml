@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="@string/preference_metric_key"
+        android:title="@string/preference_metric_title"
+        android:entries="@array/preference_metric_list_entries"
+        android:entryValues="@array/preference_metric_list_values"
+        android:defaultValue="@string/preference_metric_default" />
+
+    <CheckBoxPreference
+        android:key="@string/preference_notifications_key"
+        android:title="@string/preference_notifications_label"
+        android:summaryOff="@string/preference_notifications_false"
+        android:summaryOn="@string/preference_notifications_true"
+        android:defaultValue="@string/preference_notifications_default" />
+
+</PreferenceScreen>

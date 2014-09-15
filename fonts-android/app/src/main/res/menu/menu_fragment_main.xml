@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_refresh"
+        android:visible="false"
+        android:icon="@drawable/ic_action"
+        android:title="@string/menuitem_refresh"
+        android:actionLayout="@layout/actionbar_indeterminate_progress"
+        android:alphabeticShortcut="r"
+        android:orderInCategory="1"
+        android:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_spinner"
+        android:title="@string/action_spinner"
+        android:showAsAction="always"
+        android:orderInCategory="1"
+        android:actionViewClass="android.widget.Spinner"/>
+</menu>

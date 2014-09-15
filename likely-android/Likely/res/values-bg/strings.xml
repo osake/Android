@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Top 40 Вицове</string>
+    <string name="action_settings">Опции</string>
+    <string name="action_share">Сподели</string>
+    <string name="action_search">Търсене</string>
+    <string name="image_view_content_description">Картина.</string>
+    <string name="title_activity_full_screen">Виц</string>
+    <string name="title_activity_settings_screen">Опции</string>
+    <string name="top_fourty_limit">40</string>
+    <string name="chart_limit">50</string>
+    <string name="favorites_limit">50</string>
+    <string name="share_chooser_text">Сподели вица</string>
+    <string name="search_hint">Търси в Jokes</string>
+    <string name="app_label">Търси</string>
+    <string name="empty_top_fourty_list_view">Ти разгледа всички вицове за днес.\nМоля ела пак утре за да видиш още.</string>
+    <string name="empty_top_favorites_list_view">Все още не си харесал виц.</string>
+    <string name="title_notification">Има нови вицове!</string>
+    <string name="notification_time_summary">По кое време на деня да получаваш виц.</string>
+    <string name="notification_time_dialog_title">Избери време на деня : </string>
+    <string name="joke_of_the_day_summary">Показвай виц всеки ден.</string>
+    <string name="joke_of_the_day_title">Виц на деня</string>
+    <string name="notification_time_title">Време за вицове.</string>
+    <string name="dirty_joke_summary">Показвай мръсни вицове.</string>
+    <string name="dirty_joke_title">Мръсни вицове</string>
+    <string name="favorites">Любими</string>
+    <string name="top_fourty">Top 40</string>
+
+</resources>

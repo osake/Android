@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eftimoff.likelyandroid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- To keep the processor running while receiving the message. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- To re-schedule repeating alarms -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name="com.eftimoff.likelyandroid.application.LikelyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Likely" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.eftimoff.likelyandroid.activity.LikelyActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <!-- Points to searchable activity so the whole app can invoke search. -->
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value="com.eftimoff.likely-android.activity.SwipeActivity" />
+
+        <activity
+            android:name="com.eftimoff.likelyandroid.activity.FullScreenActivity"
+            android:label="@string/title_activity_full_screen"
+            android:parentActivityName="com.eftimoff.likelyandroid.activity.LikelyActivity" >
+            <intent-filter>
+                
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="content://com.eftimoff.likelyandroid.jokes.contentprovider/jokes" />
+            
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eftimoff.likelyandroid.activity.SwipeActivity" />
+        </activity>
+        <activity
+            android:name="com.eftimoff.likelyandroid.activity.SettingsActivity"
+            android:label="@string/title_activity_settings_screen"
+            android:parentActivityName="com.eftimoff.likelyandroid.activity.LikelyActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eftimoff.likelyandroid.activity.SwipeActivity" />
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <!-- RECEIVERS -->
+        <!-- Receiver for the alarms. -->
+        <receiver android:name="com.eftimoff.likelyandroid.receiver.NotificationBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="com.eftimoff.likelyandroid.receiver.NotificationBroadcastReceiver.NEW_NOTIFICATION" />
+
+                <category android:name="com.eftimoff.likelyandroid" />
+            </intent-filter>
+        </receiver>
+        <!-- Receiver when the boot is complete. -->
+        <receiver
+            android:name="com.eftimoff.likelyandroid.receiver.BootCompleteReceiver"
+            android:enabled="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.eftimoff.likelyandroid.service.NotificationService" />
+
+        <provider
+            android:name="com.eftimoff.likelyandroid.provider.LikelyProvider"
+            android:authorities="com.eftimoff.likelyandroid.jokes.contentprovider"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,5 @@
+05-05 11:44:52.756: I/Lab-ContentProvider(12613): Entered onCreateLoader()
+05-05 11:45:01.486: I/Lab-ContentProvider(12613): Entered footerView.OnClickListener.onClick()
+05-05 11:45:01.586: I/Lab-ContentProvider(12613): Starting Place Download
+05-05 11:45:02.226: I/Lab-ContentProvider(12613): Entered addNewPlace()
+05-05 11:45:07.466: I/Lab-ContentProvider(12613): Place: Vratsa Country: Bulgaria

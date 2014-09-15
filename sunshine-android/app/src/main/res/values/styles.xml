@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Sunshine</item>
+    </style>
+
+    <style name="ForecastTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Sunshine.NoTitle</item>
+    </style>
+
+    <style name="ActionBar.Solid.Sunshine" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/sunshine_blue</item>
+        <item name="android:icon">@mipmap/ic_launcher</item>
+    </style>
+
+    <style name="ActionBar.Solid.Sunshine.NoTitle" parent="@style/ActionBar.Solid.Sunshine">
+        <item name="android:displayOptions">useLogo|showHome</item>
+        <item name="android:icon">@drawable/ic_logo</item>
+    </style>
+
+    <style name="AppTheme.ListView">
+
+    </style>
+
+</resources>

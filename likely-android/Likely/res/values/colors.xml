@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="back_drawable_stroke_color">#000000</color>
+    <color name="back_drawable_solid_color">#FFFFFF</color>
+    <color name="actionbar_text">#2DD700</color>
+    <color name="green_color">#99FF99</color>
+    <color name="red_color">#FF0D00</color>
+    <color name="custom_row_hr_background">#000000</color>
+
+</resources>

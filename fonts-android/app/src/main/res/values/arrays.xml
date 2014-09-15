@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sorts">
+        <item>Alpha</item>
+        <item>Date</item>
+        <item>Popularity</item>
+        <item>Style</item>
+        <item>Trending</item>
+    </string-array>
+</resources>

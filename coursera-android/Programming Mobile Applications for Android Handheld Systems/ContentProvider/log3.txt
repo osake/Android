@@ -1,0 +1,9 @@
+05-05 11:47:50.896: I/Lab-ContentProvider(13104): Entered onCreateLoader()
+05-05 11:47:59.631: I/Lab-ContentProvider(13104): Entered footerView.OnClickListener.onClick()
+05-05 11:47:59.731: I/Lab-ContentProvider(13104): Starting Place Download
+05-05 11:48:00.106: I/Lab-ContentProvider(13104): Entered addNewPlace()
+05-05 11:48:04.836: I/Lab-ContentProvider(13104): Entered footerView.OnClickListener.onClick()
+05-05 11:48:04.936: I/Lab-ContentProvider(13104): Starting Place Download
+05-05 11:48:05.211: I/Lab-ContentProvider(13104): Entered addNewPlace()
+05-05 11:48:10.841: I/Lab-ContentProvider(13104): Place: Vratsa Country: Bulgaria
+05-05 11:48:10.946: I/Lab-ContentProvider(13104): Place: Berwyn Country: United States

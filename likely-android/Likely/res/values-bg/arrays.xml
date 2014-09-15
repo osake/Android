@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="notification_time_entries">
+        <item name="1">Сутрин (8 часа)</item>
+        <item name="2">Обед (12 часа)</item>
+        <item name="3">Следобед (18 часа)</item>
+    </string-array>
+    <string-array name="notification_time_values">
+        <item name="1">8</item>
+        <item name="2">12</item>
+        <item name="3">18</item>
+    </string-array>
+    <string-array name="tabs">
+        <item name="1">Top 40</item>
+        <item name="2">Любими</item>
+    </string-array>
+
+</resources>

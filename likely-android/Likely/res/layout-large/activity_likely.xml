@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LikelyActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/ActionBar.Solid.Likely"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_likely_tablet_text_view_height"
+                android:gravity="center"
+                android:text="@string/top_fourty" />
+
+            <FrameLayout
+                android:id="@+id/frameContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_likely_frame_container_padding_bottom"
+                android:paddingLeft="@dimen/activity_likely_frame_container_padding_left"
+                android:paddingRight="@dimen/activity_likely_frame_container_padding_right"
+                android:paddingTop="@dimen/activity_likely_frame_container_padding_top" >
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/ActionBar.Solid.Likely"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_likely_tablet_text_view_height"
+                android:gravity="center"
+                android:text="@string/favorites" />
+
+            <FrameLayout
+                android:id="@+id/frameContainer2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_likely_frame_container_padding_bottom"
+                android:paddingLeft="@dimen/activity_likely_frame_container_padding_left"
+                android:paddingRight="@dimen/activity_likely_frame_container_padding_right"
+                android:paddingTop="@dimen/activity_likely_frame_container_padding_top" >
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-7439702951707615/4672594885" />
+
+</LinearLayout>

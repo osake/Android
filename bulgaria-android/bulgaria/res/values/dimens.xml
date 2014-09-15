@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- View sight -->
+    <dimen name="view_sight_image_height">140dp</dimen>
+    <dimen name="view_sight_image_margin">8dp</dimen>
+    <dimen name="view_sight_label_margin">8dp</dimen>
+    <dimen name="view_sight_label_text_size">18sp</dimen>
+    <dimen name="view_sight_description_margin_bottom">8dp</dimen>
+    <dimen name="view_sight_description_margin_right">8dp</dimen>
+    <dimen name="view_sight_direction_margin_left">10dp</dimen>
+    <dimen name="view_sight_direction_margin_top">10dp</dimen>
+    <dimen name="view_sight_direction_padding">3dp</dimen>
+    <dimen name="view_sight_direction_text_size">22sp</dimen>
+    <dimen name="view_sight_buttons_height">35dp</dimen>
+    <dimen name="view_sight_buttons_margin">5dp</dimen>
+    <dimen name="view_sight_buttons_distance">8dp</dimen>
+    <dimen name="view_sight_like_height">55dp</dimen>
+    <dimen name="view_sight_like_margin">8dp</dimen>
+    <dimen name="view_sight_padding">8dp</dimen>
+    <dimen name="view_sight_description_min_height">48dp</dimen>
+
+    <!-- Fragment main -->
+    <dimen name="fragment_main_padding_bottom">8dp</dimen>
+    <dimen name="fragment_main_padding_left">8dp</dimen>
+    <dimen name="fragment_main_padding_right">8dp</dimen>
+    <dimen name="fragment_main_padding_top">8dp</dimen>
+    
+    <!-- Activity main -->
+    <dimen name="activity_main_drawer_width">260dp</dimen>
+    <dimen name="activity_main_drawer_image_height">150dp</dimen>
+
+</resources>

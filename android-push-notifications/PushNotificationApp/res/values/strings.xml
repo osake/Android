@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">PushNotificationApp</string>
+    <string name="send">Send</string>
+    <string name="clear">Clear</string>
+    <string name="project_number">407791610526</string>
+    <string name="tenant">tenant</string>
+    <string name="apphostid">apphostid</string>
+    <string name="deviceid">deviceid</string>
+    <string name="tenantText">bitmix</string>
+    <string name="apphostidText">pushpoc:merlin:1:6</string>
+    <string name="deviceIdText">1234567890</string>
+    <string name="buttonText">Register with MPS</string>
+
+</resources>

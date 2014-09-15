@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="?android:attr/actionBarSize"
+              android:orientation="vertical"
+              android:background="@drawable/blur"
+              tools:context=".MainActivity$PlaceholderFragment">
+
+    <EditText
+        android:id="@+id/editText"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="24sp"
+        android:textColor="@color/color_white"
+        android:hint="@string/edit_box_hint"/>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:numColumns="3"
+        android:dividerHeight="0dp"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

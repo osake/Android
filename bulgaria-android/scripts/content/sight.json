@@ -1,0 +1,62 @@
+{
+	"fields": [
+		{
+			"name": "label",
+			"type": "String"
+		},
+		{
+			"name": "description",
+			"type": "String"
+		},
+                {
+                        "name": "category",
+                        "type": "String"
+                },
+                {
+                        "name": "region",
+                        "type": "String"
+                },
+		{
+			"name": "showNotifications",
+			"type": "Boolean",
+			"default_value": "1"
+		},
+                {
+                        "name": "like",
+                        "type": "Boolean",
+                        "default_value": "1"
+                },
+		{
+			"name": "thumbnail",
+                        "type": "String"
+		},
+                {
+                        "name": "img1",
+                        "type": "String"
+                },
+                {
+                        "name": "img2",
+                        "type": "String"
+                },
+                {
+                        "name": "img3",
+                        "type": "String"
+                },
+                {
+                        "name": "img4",
+                        "type": "String"
+                },
+                {
+                        "name": "img5",
+                        "type": "String"
+                },
+		{
+			"name": "coordinateX",
+                        "type": "Float"
+		},
+                {
+                        "name": "coordinateY",
+                        "type": "Float"
+                }
+	]
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">България</string>
+    <string name="action_settings">Опции</string>
+    <string name="action_meters">Метри</string>
+
+    <string-array name="categories">
+        <item>Водопади</item>
+        <item>Фонтани</item>
+        <item>Мозей</item>
+        <item>Хижи</item>
+    </string-array>
+    <string-array name="tabs">
+        <item>Най-близо</item>
+        <item>Окръг</item>
+        <item>Разгледани</item>
+    </string-array>
+    <string-array name="meters">
+        <item>1 км</item>
+        <item>1.5 км</item>
+        <item>2 км</item>
+        <item>2.5 км</item>
+        <item>3 км</item>
+    </string-array>
+
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    <string name="drawer_inner_text">Категории</string>
+    <string name="drawer_checkbox_all">Всички</string>
+    <string name="drawer_checkbox_none">Никои</string>
+    <string name="image_content_description">Снимка на мястото</string>
+
+</resources>

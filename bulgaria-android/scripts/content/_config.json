@@ -1,0 +1,12 @@
+{
+	"toolVersion": "1.7",
+	"projectPackageId": "com.eftimoff.bulgaria",
+	"authority": "com.eftimoff.bulgaria.sightprovider",
+	"providerJavaPackage": "com.eftimoff.bulgaria.provider",
+	"providerClassName": "SightProvider",
+	"sqliteOpenHelperClassName": "BulgariaSQLiteOpenHelper",
+	"sqliteOpenHelperCallbacksClassName": "BulgariaSQLiteOpenHelperCallbacks",
+	"databaseFileName": "bulgaria.db",
+	"databaseVersion": 1,
+	"enableForeignKeys": true,
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="notification_time_entries">
+        <item name="1">Morning (8 o\'clock)</item>
+        <item name="2">Noon (12 o\'clock)</item>
+        <item name="3">Afternoon (18 o\'clock)</item>
+    </string-array>
+    <string-array name="notification_time_values">
+        <item name="1">8</item>
+        <item name="2">12</item>
+        <item name="3">18</item>
+    </string-array>
+    <string-array name="tabs">
+        <item name="1">Top 40</item>
+        <item name="2">Favorites</item>
+    </string-array>
+
+</resources>

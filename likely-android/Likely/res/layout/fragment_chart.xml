@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.fortysevendeg.swipelistview.SwipeListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/activity_swipe_list_view_divider_height"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        swipe:swipeActionLeft="dismiss"
+        swipe:swipeActionRight="dismiss"
+        swipe:swipeAnimationTime="@integer/swipe_list_view_animation_time"
+        swipe:swipeBackView="@+id/customRowBack"
+        swipe:swipeCloseAllItemsWhenMoveList="true"
+        swipe:swipeDrawableChecked="@drawable/back_drawable"
+        swipe:swipeFrontView="@+id/customRowFront"
+        swipe:swipeMode="both"
+        swipe:swipeOpenOnLongPress="false" />
+
+    <!-- the android:id is important -->
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

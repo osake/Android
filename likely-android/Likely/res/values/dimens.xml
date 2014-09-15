@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="back_drawable_radius">5dp</dimen>
+    <dimen name="back_drawable_stroke_width">1dp</dimen>
+    <dimen name="activity_swipe_list_view_divider_height">4dp</dimen>
+    <dimen name="activity_likely_frame_container_padding_bottom">5dp</dimen>
+    <dimen name="activity_likely_frame_container_padding_left">5dp</dimen>
+    <dimen name="activity_likely_frame_container_padding_right">5dp</dimen>
+    <dimen name="activity_likely_frame_container_padding_top">5dp</dimen>
+    <dimen name="activity_likely_tablet_text_view_height">48dp</dimen>
+    <dimen name="custom_row_padding">8dp</dimen>
+    <dimen name="custom_row_top_height">35dp</dimen>
+    <dimen name="custom_row_top_category_text_size">21sp</dimen>
+    <dimen name="custom_row_hr_height">1dp</dimen>
+    <dimen name="custom_row_hr_margin_bottom">2dp</dimen>
+    <dimen name="custom_row_hr_margin_top">2dp</dimen>
+    <dimen name="custom_row_hr_padding">5dp</dimen>
+    <dimen name="custom_row_text_padding">5dp</dimen>
+    <dimen name="custom_row_text_text_size">17sp</dimen>
+    <dimen name="custom_row_bottom_height">25dp</dimen>
+    <dimen name="custom_row_date_text_size">12sp</dimen>
+    <dimen name="custom_row_share_button_width">25dp</dimen>
+    <dimen name="fragment_favorites_text_view_text_size">20sp</dimen>
+    <dimen name="fragment_full_screen_padding_bottom">5dp</dimen>
+    <dimen name="fragment_full_screen_padding_left">5dp</dimen>
+    <dimen name="fragment_full_screen_padding_right">5dp</dimen>
+    <dimen name="fragment_full_screen_padding_top">5dp</dimen>
+    <dimen name="fragment_full_screen_text_view_padding">5dp</dimen>
+    <dimen name="fragment_full_screen_text_view_text_size">23sp</dimen>
+    <dimen name="fragment_top_fourty_text_view_text_size">20sp</dimen>
+
+</resources>

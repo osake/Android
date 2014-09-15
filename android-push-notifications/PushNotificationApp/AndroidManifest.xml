@@ -1,0 +1,61 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pushnotificationapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <!-- To send the id to the server. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- To get google account for versions below 4.0.4. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- To keep the processor running while receiving the message. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- To receive messages. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Custom permission to prevent other apps to receiving application's messages. -->
+    <permission
+        android:name="uk.co.bitmix.pushnotificationapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="uk.co.bitmix.pushnotificationapp.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Main activity. -->
+        <activity
+            android:name="uk.co.bitmix.pushnotificationapp.MainActivity"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Receiver of the messages. -->
+        <receiver
+            android:name="uk.co.bitmix.pushnotificationapp.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="uk.co.bitmix.pushnotificationapp" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Service handling the hard work of getting the service. -->
+        <service android:name="uk.co.bitmix.pushnotificationapp.GcmIntentService" />
+    </application>
+
+</manifest>

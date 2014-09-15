@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:background="@drawable/blur"
+                android:layout_height="match_parent"
+                tools:context="com.eftimoff.fonts.activities.SplashActivity"
+                tools:ignore="MergeRootFrame">
+
+    <TextView
+        android:id="@+id/splashFragmentTextView"
+        android:text="@string/welcome"
+        android:textColor="@color/color_white"
+        android:textSize="45sp"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/splashFragmentProgressBar"
+        android:layout_below="@+id/splashFragmentTextView"
+        android:layout_alignLeft="@+id/splashFragmentTextView"
+        android:layout_alignRight="@+id/splashFragmentTextView"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NumberProgressBar_Funny_Orange"
+        />
+
+</RelativeLayout>

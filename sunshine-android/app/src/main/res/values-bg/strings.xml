@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Sunshine</string>
+    <string name="action_settings">Опции</string>
+    <string name="action_share">Share</string>
+    <string name="action_map">Местоположение</string>
+    <string name="action_location_key">location_key</string>
+    <string name="action_location_default">Локация</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_settings">Опции</string>
+    <string name="preference_latitude_key">lat</string>
+    <string name="preference_longitude_key">lon</string>
+    <string name="preference_latitude_default">42</string>
+    <string name="preference_longitude_default">42</string>
+    <string name="preference_notifications_key">notifications</string>
+    <string name="preference_notifications_label">Известия</string>
+    <string name="preference_notifications_true">Да</string>
+    <string name="preference_notifications_false">Не</string>
+    <string name="preference_notifications_default">true</string>
+    <string name="preference_metric_key">metric</string>
+    <string name="preference_metric_title">Мерни единици</string>
+    <string name="preference_metric_default">Целзий</string>
+    <string name="preference_metric_metric">Целзий</string>
+    <string name="preference_metric_imperial">Фаренхайт</string>
+
+    <!-- Date label when displaying today's weather forecast [CHAR LIMIT=20] -->
+    <string name="today">Днес</string>
+
+    <!-- Date label when displaying tomorrow's weather forecast [CHAR LIMIT=20] -->
+    <string name="tomorrow">Утре</string>
+
+
+    <!-- Date format [CHAR LIMIT=NONE] -->
+    <string name="format_full_friendly_date">
+        <xliff:g id="month">%1$s</xliff:g>, <xliff:g id="day">%2$s</xliff:g>
+    </string>
+
+    <!-- Strings for formatting weather-related data -->
+    <!-- Temperature format [CHAR LIMIT=5 -->
+    <string name="format_temperature"><xliff:g id="temp">%1.0f</xliff:g>\u00B0</string>
+
+    <!-- Windspeed formats -->
+    <!-- Wind in mph [CHAR LIMIT=25] -->
+    <string name="format_wind_mph">
+        Вятър: <xliff:g id="speed">%1$1.0f</xliff:g> м/ч <xliff:g id="direction">%2$s</xliff:g>
+    </string>
+    <!-- Wind in kph [CHAR LIMIT=25] -->
+    <string name="format_wind_kmh">
+        Вятър: <xliff:g id="speed">%1$1.0f</xliff:g> kм/ч <xliff:g id="direction">%2$s</xliff:g>
+    </string>
+
+    <!-- Pressure format CHAR LIMIT=25] -->
+    <string name="format_pressure">Налягане: <xliff:g id="pressure">%1.0f</xliff:g> hPa</string>
+
+    <!-- Humidity format CHAR LIMIT=25]-->
+    <string name="format_humidity">Влажност: <xliff:g id="humidity">%1.0f</xliff:g> %%</string>
+
+    <string name="pref_last_notification">last_notification</string>
+    
+    <string name="format_notification">
+        Времето ще е: <xliff:g id="condition">%1$s</xliff:g> Най-много: <xliff:g id="high">%2$s</xliff:g> , Най-малко: <xliff:g id="low">%3$s</xliff:g>
+    </string>
+
+    <!-- Share format [CHAR LIMIT=NONE]-->
+    <string name="format_share">
+        Weather for <xliff:g id="date">%1$s</xliff:g> in <xliff:g id="location">%2$s</xliff:g>:
+        A high of <xliff:g id="high">%3$s</xliff:g> and low of
+        <xliff:g id="low">%4$s</xliff:g>
+    </string>
+
+    <string name="app_label">Sunshine</string>
+
+</resources>

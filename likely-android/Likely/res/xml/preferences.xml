@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Notifications" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_joke_of_the_day"
+            android:summary="@string/joke_of_the_day_summary"
+            android:title="@string/joke_of_the_day_title" />
+
+        <ListPreference
+            android:defaultValue="8"
+            android:dependency="show_joke_of_the_day"
+            android:dialogTitle="@string/notification_time_dialog_title"
+            android:entries="@array/notification_time_entries"
+            android:entryValues="@array/notification_time_values"
+            android:key="notification_time_list"
+            android:summary="@string/notification_time_summary"
+            android:title="@string/notification_time_title" />
+    </PreferenceCategory>
+ <!--    <PreferenceCategory android:title="Content" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_dirty_jokes"
+            android:summary="@string/dirty_joke_summary"
+            android:title="@string/dirty_joke_title" />
+    </PreferenceCategory> -->
+
+</PreferenceScreen>

@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/fragment_full_screen_padding_bottom"
+    android:paddingLeft="@dimen/fragment_full_screen_padding_left"
+    android:paddingRight="@dimen/fragment_full_screen_padding_right"
+    android:paddingTop="@dimen/fragment_full_screen_padding_top"
+    tools:context="com.example.swipe.FullScreenActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/fragment_full_screen_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:padding="@dimen/fragment_full_screen_text_view_padding"
+        android:scrollbars="none"
+        android:textSize="@dimen/fragment_full_screen_text_view_text_size" />
+
+</LinearLayout>
